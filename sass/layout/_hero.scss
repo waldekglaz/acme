@@ -1,0 +1,26 @@
+.hero {
+    background-image: linear-gradient(rgba(51, 51, 51, 0.5)), url(../img/heroMobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 1.5;
+    color: $white-text-color;
+    padding-bottom: 45px;
+
+    .hero-heading {
+        font-size: 30px;
+        margin: 20px 0 10px;
+        width: 60%;
+    }
+
+    .hero-paragraph {
+        font-size: 13px;
+        margin-bottom: 25px;
+        width: 70%;
+    }
+
+}

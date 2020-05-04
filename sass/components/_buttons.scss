@@ -1,0 +1,42 @@
+.btn {
+    display: inline-block;
+    font-size: 12px;
+    margin: 10px 15px;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn.medium {
+    padding: 5px 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 16px;
+    width: 141px;
+    border-radius: 5px;
+}
+
+.btn-pill {
+    border-radius: 20px;
+}
+
+.btn-alert {
+    background-color: $red-color;
+    border: 1px solid $red-color;
+    color: $white-text-color;
+}
+
+.btn.light {
+    color: $white-text-color;
+    border: 1px solid $white-text-color;
+    transition: .2s;
+
+    &:hover {
+        background-color: $white-text-color;
+        color: $black-color;
+    }
+}
+
+.btn.outline {
+    background-color: transparent;
+}

@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  color: #333;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  text-align: center;
+  color: #f9f9f9;
+  padding: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 105px;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #eb5757;
+  color: #f9f9f9;
+}
+
+.navbar .logo {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .logo i {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.navbar .cart-nav-wrapper {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .cart-nav-wrapper i {
+  font-size: 20px;
+}
+
+.navbar .cart-nav-wrapper .cart {
+  padding: 6px 12px;
+  background-color: #222;
+  border-radius: 5px;
+  position: relative;
+}
+
+.navbar .cart-nav-wrapper .cart::before {
+  content: '0';
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 18px;
+  line-height: 18px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  background-color: #f9f9f9;
+  padding: 0 6px;
+  border-radius: 50%;
+  color: #222;
+  font-size: 11px;
+}
+
+.navbar .cart-nav-wrapper .hamburger {
+  padding: 18px;
+}
+
+.navbar .cart-nav-wrapper .hamburger.active {
+  z-index: 3;
+  background-color: #222;
+  border-radius: 5px;
+}
+
+.navbar nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  min-height: 600px;
+  padding-top: 140px;
+  padding-bottom: 30px;
+  z-index: 1;
+  background-color: #eb5757;
+  text-align: center;
+  line-height: 1.5;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.navbar nav .nav-link {
+  display: block;
+  color: #f9f9f9;
+  font-size: 30px;
+  padding: 4px 10px;
+  margin: 0 20px;
+}
+
+.navbar nav.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hero {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.5))), url(../img/heroMobile.jpg);
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5)), url(../img/heroMobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  line-height: 1.5;
+  color: #f9f9f9;
+  padding-bottom: 45px;
+}
+
+.hero .hero-heading {
+  font-size: 30px;
+  margin: 20px 0 10px;
+  width: 60%;
+}
+
+.hero .hero-paragraph {
+  font-size: 13px;
+  margin-bottom: 25px;
+  width: 70%;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 15px;
+  padding: 5px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn.medium {
+  padding: 5px 25px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 16px;
+  width: 141px;
+  border-radius: 5px;
+}
+
+.btn-pill {
+  border-radius: 20px;
+}
+
+.btn-alert {
+  background-color: #eb5757;
+  border: 1px solid #eb5757;
+  color: #f9f9f9;
+}
+
+.btn.light {
+  color: #f9f9f9;
+  border: 1px solid #f9f9f9;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.btn.light:hover {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+.btn.outline {
+  background-color: transparent;
+}
+/*# sourceMappingURL=style.css.map */
