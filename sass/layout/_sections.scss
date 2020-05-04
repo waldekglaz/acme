@@ -1,0 +1,88 @@
+// global section
+.section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+}
+
+//support section
+.support {
+    .support-top-details-text {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .support-top-heading {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .support-square-container {
+        padding-top: 24px;
+
+        .support-square {
+            position: relative;
+            margin-bottom: 45px;
+            background-color: $black-color;
+            color: $white-text-color;
+            min-height: 330px;
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            overflow: hidden;
+
+            .support-square-number {
+                position: absolute;
+                left: 10%;
+                top: 10%;
+                z-index: 0;
+            }
+
+            .support-square-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-transform: uppercase;
+                z-index: 0;
+            }
+        }
+
+        .square-1::before {
+            content: "";
+            height: 160px;
+            width: 160px;
+            border-radius: 50%;
+            border: 9px solid $white-text-color;
+            position: absolute;
+            bottom: -25%;
+            right: -25%;
+        }
+
+        .square-2::before {
+            content: "";
+            height: 100px;
+            width: 160px;
+            border: 9px solid $white-text-color;
+            position: absolute;
+            bottom: -25%;
+            right: -10%;
+            transform: rotate(45deg);
+        }
+
+        .square-3::before {
+            content: "";
+            height: 160px;
+            width: 160px;
+            border: 9px solid $white-text-color;
+            position: absolute;
+            bottom: -30%;
+            right: -30%;
+        }
+    }
+}
