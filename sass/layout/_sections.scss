@@ -5,9 +5,12 @@
 //      03 - Section Safe
 //      04 - Section Products
 //      05 - Section Shop Local
+//          about.html
+//      06 - Section Owners
 
 
 //      01 - Global
+
 .section {
     padding-top: 65px;
 
@@ -21,6 +24,38 @@
         text-transform: uppercase;
     }
 
+}
+
+// Section with 2 columns from index.html and about.html
+.two-columns {
+    .shop-local-image {
+        min-height: 440px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .column-2 {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-color: $black-color;
+        color: $white-text-color;
+        line-height: 1.5;
+
+        .section-top-heading {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        p:nth-last-child(2) {
+            margin-bottom: 0;
+        }
+
+
+    }
 }
 
 // 02 - Section Support
@@ -128,8 +163,7 @@
     }
 
     .btn {
-        margin-right: 0;
-        margin-left: auto;
+        margin: 0 auto
     }
 
 
@@ -197,13 +231,10 @@
 }
 
 //      05 - Section Shop Local
-.shop-local {
+.two-columns {
     .shop-local-image {
-        min-height: 440px;
         background-image: url("../img/shopLocalMobile.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+
     }
 
     .column-2 {
@@ -213,21 +244,21 @@
         color: $white-text-color;
         line-height: 1.5;
 
-        .section-top-heading {
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 16px;
-        }
-
-        p:nth-last-child(2) {
-            margin-bottom: 0;
-        }
-
         p:last-child {
             font-weight: 700;
 
         }
+    }
+}
+
+//      06 - Section Owners
+
+.owners {
+    img {
+        display: block;
+        width: 70vw;
+        height: 70vw;
+        border-radius: 50%;
+        margin: 0 auto;
     }
 }

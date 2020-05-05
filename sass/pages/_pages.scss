@@ -1,4 +1,5 @@
 // 01 Page Announcement
+// 02 Page About
 
 // 01 Page Announcement
 
@@ -26,4 +27,19 @@
     p:last-child {
         margin-bottom: 16px;
     }
+}
+
+// 02 Page About
+.hero.about {
+    background-image: url("../img/aboutHeroMobile.jpg");
+}
+
+.two-columns {
+    .column-1 {
+        background-image: url("../img/ownersMobile.jpg");
+    }
+}
+
+.hero.need-help {
+    background-image: url("../img/needHelpMobile.jpg");
 }
