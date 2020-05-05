@@ -157,7 +157,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 550px;
+  min-height: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,17 +187,16 @@ body {
 
 .section {
   padding-top: 65px;
-  padding-bottom: 65px;
 }
 
-.support .support-top-details-text {
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-.support .support-top-heading {
+.section .section-top-heading {
   font-size: 40px;
   line-height: 1.2;
+}
+
+.section .section-sub-title {
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .support p {
@@ -263,37 +262,140 @@ body {
 
 .support .support-square-container .square-3::before {
   content: "";
-  height: 160px;
-  width: 160px;
+  height: 140px;
+  width: 140px;
   border: 9px solid #f9f9f9;
   position: absolute;
-  bottom: -30%;
-  right: -30%;
+  bottom: -20%;
+  right: -20%;
+}
+
+.safe {
+  padding-bottom: 25px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.5))), url(../img/safeMobile.jpg);
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5)), url(../img/safeMobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f9f9f9;
+  min-height: 550px;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+}
+
+.safe .safe-heading {
+  font-size: 30px;
+  margin: 20px 0 10px;
+  line-height: 1.2;
+}
+
+.safe .safe-paragraph {
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.safe .btn {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.shop-products {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.shop-products .product {
+  margin: 40px 0;
+  position: relative;
+}
+
+.shop-products .product .shop-image {
+  margin-bottom: 15px;
+  border-radius: 5px;
+  min-height: 350px;
+  background-position: center;
+  background-size: cover;
+}
+
+.shop-products .product .shop-item-name {
+  font-size: 20px;
+}
+
+.shop-products .product .shop-item-price {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.shop-products .product .shop-item-price span {
+  text-decoration: line-through;
+  color: #eb5757;
+}
+
+.shop-products .product .shop-item-img-1 {
+  background-image: url(../img/tentMobile.jpg);
+}
+
+.shop-products .product .shop-item-img-2 {
+  background-image: url(../img/backpackMobile.jpg);
+}
+
+.shop-products .product .shop-item-img-3 {
+  background-image: url(../img/bootsMobile.jpg);
+}
+
+.shop-products .sale::before {
+  content: "SALE";
+  font-size: 14px;
+  padding: 5px 20px;
+  background-color: #eb5757;
+  border-radius: 5px;
+  color: #f9f9f9;
+  position: absolute;
+  top: 2%;
+  right: 5%;
 }
 
 .btn {
   display: inline-block;
   font-size: 12px;
   margin: 10px 15px;
-  padding: 5px 20px;
+  padding: 5px 25px;
   text-align: center;
+  text-transform: capitalize;
   cursor: pointer;
 }
 
-.btn.medium {
-  padding: 5px 25px;
+.btn.medium,
+.btn.large {
   font-weight: 700;
-  text-transform: capitalize;
   font-size: 16px;
-  width: 141px;
   border-radius: 5px;
+}
+
+.btn.medium {
+  width: 141px;
+}
+
+.btn.large {
+  width: 210px;
 }
 
 .btn-pill {
   border-radius: 20px;
 }
 
-.btn-alert {
+.btn.alert {
   background-color: #eb5757;
   border: 1px solid #eb5757;
   color: #f9f9f9;
@@ -309,6 +411,16 @@ body {
 .btn.light:hover {
   background-color: #f9f9f9;
   color: #222;
+}
+
+.btn-white {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.btn.black {
+  background-color: #333;
+  color: #f9f9f9;
 }
 
 .btn.outline {

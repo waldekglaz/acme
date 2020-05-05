@@ -2,25 +2,32 @@
     display: inline-block;
     font-size: 12px;
     margin: 10px 15px;
-    padding: 5px 20px;
+    padding: 5px 25px;
     text-align: center;
+    text-transform: capitalize;
     cursor: pointer;
 }
 
-.btn.medium {
-    padding: 5px 25px;
+.btn.medium,
+.btn.large {
     font-weight: 700;
-    text-transform: capitalize;
     font-size: 16px;
-    width: 141px;
     border-radius: 5px;
+}
+
+.btn.medium {
+    width: 141px;
+}
+
+.btn.large {
+    width: 210px;
 }
 
 .btn-pill {
     border-radius: 20px;
 }
 
-.btn-alert {
+.btn.alert {
     background-color: $red-color;
     border: 1px solid $red-color;
     color: $white-text-color;
@@ -35,6 +42,16 @@
         background-color: $white-text-color;
         color: $black-color;
     }
+}
+
+.btn-white {
+    background-color: $white-text-color;
+    color: $black-text-color;
+}
+
+.btn.black {
+    background-color: $black-text-color;
+    color: $white-text-color;
 }
 
 .btn.outline {
