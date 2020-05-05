@@ -1,0 +1,29 @@
+// 01 Page Announcement
+
+// 01 Page Announcement
+
+.hero.announcement {
+    background-image: none;
+    background-color: $black-color;
+    min-height: 460px;
+
+    .hero-heading {
+        font-size: 38px;
+        width: 100%;
+    }
+
+}
+
+.section.announcement {
+    .section-top-heading {
+        font-size: 32px;
+    }
+
+    p {
+        margin-top: 16px;
+    }
+
+    p:last-child {
+        margin-bottom: 16px;
+    }
+}

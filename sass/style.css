@@ -169,7 +169,7 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  line-height: 1.5;
+  line-height: 1.2;
   color: #f9f9f9;
   padding-bottom: 45px;
 }
@@ -547,5 +547,28 @@ body {
 
 .cart-container.active {
   z-index: 5;
+}
+
+.hero.announcement {
+  background-image: none;
+  background-color: #222;
+  min-height: 460px;
+}
+
+.hero.announcement .hero-heading {
+  font-size: 38px;
+  width: 100%;
+}
+
+.section.announcement .section-top-heading {
+  font-size: 32px;
+}
+
+.section.announcement p {
+  margin-top: 16px;
+}
+
+.section.announcement p:last-child {
+  margin-bottom: 16px;
 }
 /*# sourceMappingURL=style.css.map */
