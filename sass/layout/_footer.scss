@@ -1,0 +1,39 @@
+.footer {
+    padding: 65px 0 10px;
+    text-align: center;
+    background-color: $black-color;
+    color: $white-text-color;
+    line-height: 1.5;
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        margin-bottom: 16px;
+
+        i {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+    }
+
+    .socials {
+        font-size: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 210px;
+        margin: 0 auto 20px;
+
+        a {
+            padding: 12px;
+            color: $white-text-color;
+        }
+    }
+
+    .small-footer {
+        font-size: 12px;
+    }
+}
