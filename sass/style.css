@@ -302,6 +302,9 @@ body {
 .safe .safe-paragraph {
   font-size: 13px;
   margin-bottom: 25px;
+  width: 70%;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .safe .btn {
