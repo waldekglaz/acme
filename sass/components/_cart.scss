@@ -8,6 +8,8 @@
     // z-index: 5;
     z-index: -2;
     background-color: white;
+    opacity: 0;
+    transition: opacity .4s;
 
 
 
@@ -18,6 +20,10 @@
         align-items: center;
         font-size: 18px;
         border-bottom: 1px solid #aaa;
+
+        .fas {
+            font-size: 22px;
+        }
     }
 
     .cart-items {
@@ -28,4 +34,5 @@
 
 .cart-container.active {
     z-index: 5;
+    opacity: 1;
 }
