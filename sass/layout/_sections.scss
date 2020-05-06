@@ -649,12 +649,18 @@
 
 
 .contact-content {
-    display: flex;
-    justify-content: space-between;
+    @include min-1024px {
+        display: flex;
+        justify-content: space-between;
+    }
+
 
     .contact-form {
-        padding-top: 0;
-        flex-basis: 70%;
+        @include min-1024px {
+            padding-top: 0;
+            flex-basis: 70%;
+        }
+
     }
 }
 
