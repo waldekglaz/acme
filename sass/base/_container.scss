@@ -1,3 +1,7 @@
 .container {
     padding: 0 25px;
+
+    @include min-1024px {
+        padding: 0 100px;
+    }
 }

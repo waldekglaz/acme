@@ -11,16 +11,44 @@
     color: $white-text-color;
     padding-bottom: 45px;
 
+    @include min-768px {
+        min-height: 1000px;
+    }
+
+    @include min-1024px {
+        background-image: linear-gradient(rgba(51, 51, 51, 0.5)), url(../img/heroDesktop.jpg);
+        padding-bottom: 80px;
+    }
+
     .hero-heading {
         font-size: 30px;
         margin: 20px 0 10px;
         width: 60%;
+
+        @include min-600px {
+            font-size: 68px;
+            line-height: 1.2;
+        }
+
+        @include min-1024px {
+            width: 35%;
+        }
+
     }
 
     .hero-paragraph {
         font-size: 13px;
         margin-bottom: 25px;
+        line-height: 1.5;
         width: 70%;
+
+        @include min-600px {
+            font-size: 18px;
+        }
+
+        @include min-1024px {
+            width: 35%;
+        }
     }
 
     .btn {

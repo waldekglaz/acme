@@ -9,6 +9,13 @@
     padding: 20px;
     z-index: 2;
 
+    @include min-768px {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 110px;
+    }
+
     .btn {
         margin: 10px 15px;
     }

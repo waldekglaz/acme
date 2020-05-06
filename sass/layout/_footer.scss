@@ -5,6 +5,12 @@
     color: $white-text-color;
     line-height: 1.5;
 
+    @include min-600px {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
     .footer-logo {
         display: flex;
         justify-content: center;
@@ -15,6 +21,10 @@
         i {
             font-size: 30px;
             margin-right: 10px;
+        }
+
+        @include min-600px {
+            flex-basis: 50%;
         }
 
     }
@@ -31,9 +41,17 @@
             padding: 12px;
             color: $white-text-color;
         }
+
+        @include min-600px {
+            flex-basis: 150px;
+        }
     }
 
     .small-footer {
         font-size: 12px;
+
+        @include min-600px {
+            flex-basis: 100%;
+        }
     }
 }

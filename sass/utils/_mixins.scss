@@ -1,0 +1,25 @@
+// media queries
+
+@mixin min-600px {
+    @media(min-width:600px) {
+        @content;
+    }
+}
+
+;
+
+@mixin min-768px {
+    @media(min-width:768px) {
+        @content;
+    }
+}
+
+;
+
+@mixin min-1024px {
+    @media(min-width:1024px) {
+        @content;
+    }
+}
+
+;
