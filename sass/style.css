@@ -28,6 +28,10 @@ body {
   z-index: 2;
 }
 
+.top-banner .btn {
+  margin: 10px 15px;
+}
+
 .navbar {
   position: fixed;
   top: 105px;
@@ -344,7 +348,8 @@ body {
 }
 
 .safe .btn {
-  margin: 0 auto;
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .shop-products {
@@ -468,6 +473,60 @@ body {
   background-image: linear-gradient(transparent, #222), url(../img/needHelpMobile.jpg);
 }
 
+.featured .shop-products {
+  color: #f9f9f9;
+}
+
+.featured .shop-products .shop-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  min-height: 300px;
+}
+
+.featured .shop-products .shop-image .btn {
+  width: 180px;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.featured .shop-products .shop-image .shop-item-name {
+  position: absolute;
+  bottom: 16%;
+  left: 3%;
+  font-size: 24px;
+}
+
+.featured .shop-products .shop-image .shop-item-price {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  font-size: 16px;
+}
+
+.shop-navigation .btn {
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.product .gift-card {
+  background-image: url(../img/giftMobile.jpg);
+}
+
+.product .white-tent {
+  background-image: url(../img/whiteTentMobile.jpg);
+}
+
 .footer {
   padding: 65px 0 10px;
   text-align: center;
@@ -522,7 +581,6 @@ body {
 .btn {
   display: inline-block;
   font-size: 12px;
-  margin: 10px 15px;
   padding: 5px 25px;
   text-align: center;
   text-transform: capitalize;
@@ -537,12 +595,12 @@ body {
 }
 
 .btn.medium {
-  width: 141px;
+  padding: 10px 30px;
+  width: 160px;
 }
 
 .btn.large {
-  width: 230px;
-  padding: 10px 30px;
+  padding: 10px 35px;
 }
 
 .btn-pill {

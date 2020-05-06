@@ -12,6 +12,18 @@
 //      07 - Section Meet Owners
 //      08 - Section Owners
 
+//      ...    shop.html      ...
+
+//      09 - Section Featured
+//      10 - Section Shop Content
+
+//      ...    giftcard.html      ...
+
+//      11 - gift card image
+
+//      ...    tents.html      ...
+
+//      11 - white tent image
 
 //      01 - Global
 
@@ -167,7 +179,8 @@
     }
 
     .btn {
-        margin: 0 auto
+        margin-right: 0;
+        margin-left: auto;
     }
 
 
@@ -311,4 +324,72 @@
 // Section Hero Need Help
 .hero.need-help {
     background-image: linear-gradient(transparent, $black-color), url(../img/needHelpMobile.jpg)
+}
+
+//      09 - Section Featured
+
+.featured {
+    .shop-products {
+        color: $white-text-color;
+
+        .shop-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            min-height: 300px;
+
+
+            .btn {
+                width: 180px;
+                position: absolute;
+                top: 3%;
+                right: 3%;
+
+            }
+
+            .shop-item-name {
+                position: absolute;
+                bottom: 16%;
+                left: 3%;
+                font-size: 24px;
+            }
+
+            .shop-item-price {
+                position: absolute;
+                bottom: 0;
+                left: 3%;
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+//      10 - Section Shop Content
+
+.shop-navigation {
+
+    .btn {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+    }
+}
+
+//      11 - gift card image
+.product {
+    .gift-card {
+        background-image: url(../img/giftMobile.jpg);
+    }
+}
+
+//      ...    tents.html      ...
+
+//      11 - white tent image
+
+.product {
+    .white-tent {
+        background-image: url(../img/whiteTentMobile.jpg);
+    }
 }

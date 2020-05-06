@@ -1,7 +1,6 @@
 .btn {
     display: inline-block;
     font-size: 12px;
-    margin: 10px 15px;
     padding: 5px 25px;
     text-align: center;
     text-transform: capitalize;
@@ -16,12 +15,12 @@
 }
 
 .btn.medium {
-    width: 141px;
+    padding: 10px 30px;
+    width: 160px;
 }
 
 .btn.large {
-    width: 230px;
-    padding: 10px 30px;
+    padding: 10px 35px;
 }
 
 .btn-pill {
