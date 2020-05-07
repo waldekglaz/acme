@@ -37,6 +37,15 @@
     }
 }
 
+.top-banner {
+    .btn {
+        &:hover {
+            background-color: $red-color;
+        }
+
+    }
+}
+
 .btn.light {
     color: $white-text-color;
     border: 1px solid $white-text-color;

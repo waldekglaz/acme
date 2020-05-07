@@ -1543,6 +1543,10 @@ body {
   background-color: #222;
 }
 
+.top-banner .btn:hover {
+  background-color: #eb5757;
+}
+
 .btn.light {
   color: #f9f9f9;
   border: 1px solid #f9f9f9;
