@@ -29,8 +29,12 @@
 
 .btn.alert {
     background-color: $red-color;
-    border: 1px solid $red-color;
     color: $white-text-color;
+    border-color: transparent;
+
+    &:hover {
+        background-color: $black-color;
+    }
 }
 
 .btn.light {

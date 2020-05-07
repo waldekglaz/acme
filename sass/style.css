@@ -92,7 +92,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    top: 86px;
+    top: 84px;
   }
 }
 
@@ -1535,8 +1535,12 @@ body {
 
 .btn.alert {
   background-color: #eb5757;
-  border: 1px solid #eb5757;
   color: #f9f9f9;
+  border-color: transparent;
+}
+
+.btn.alert:hover {
+  background-color: #222;
 }
 
 .btn.light {
