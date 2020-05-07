@@ -16,6 +16,10 @@
         min-height: 110px;
     }
 
+    @include min-1024px {
+        min-height: 74px;
+    }
+
     .btn {
         margin: 10px 15px;
     }

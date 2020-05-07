@@ -1,0 +1,22 @@
+.card {
+    text-align: center;
+    margin: 40px 0;
+
+    .card-bg-image {
+        margin-bottom: 15px;
+        border-radius: 5px;
+        min-height: 350px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+}

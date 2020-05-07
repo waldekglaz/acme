@@ -21,16 +21,15 @@
 
 //      11 - gift card image
 
-//      ...    tents.html      ...
-
-//      11 - white tent image
-
 //      ...    contact.html      ...
 
 //      12 - Contact Hero
 //      13 - Section Contact
 //      14 - Section contact-content
 
+//      ...    product-backpack.html      ...
+
+//      15 - Section individual product
 //      01 - Global
 
 .section {
@@ -58,6 +57,10 @@
 
     @include min-1024px {
         margin: 65px 100px 25px;
+    }
+
+    @include min-1920px {
+        margin: 65px 300px 25px;
     }
 
     .column-image {
@@ -164,6 +167,10 @@
 
             @include min-768px {
                 font-size: 30px;
+            }
+
+            @include min-1024px {
+                min-height: 50vh;
             }
 
 
@@ -298,14 +305,17 @@
         margin: 40px 0;
         text-align: center;
 
+
+
         @include min-768px {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            // justify-content: space-between;
         }
 
-        .product {
-            margin: 40px 0;
+
+
+        .card {
             position: relative;
 
             @include min-768px {
@@ -313,44 +323,33 @@
             }
 
             @include min-1024px {
-                flex-basis: 32%;
+                flex-basis: 30%;
+                margin-right: 2%;
             }
 
-
-            .shop-image {
-                margin-bottom: 15px;
-                border-radius: 5px;
-                min-height: 350px;
-                background-position: center;
-                background-size: cover;
+            .card-bg-image.tent {
+                background-image: url(../img/tentMobile.jpg);
             }
 
-            .shop-item-name {
-                font-size: 20px;
+            .card-bg-image.backpack {
+                background-image: url(../img/backpackMobile.jpg);
             }
 
-            .shop-item-price {
-                font-size: 14px;
-                font-weight: 700;
-                margin-bottom: 15px;
+            .card-bg-image.boots {
+                background-image: url(../img/bootsMobile.jpg);
+            }
 
+            .card-bg-image.giftcard {
+                background-image: url(../img/giftMobile.jpg);
+            }
+
+            .card-text {
                 span {
                     text-decoration: line-through;
                     color: $red-color;
                 }
             }
 
-            .shop-item-img-1 {
-                background-image: url(../img/tentMobile.jpg);
-            }
-
-            .shop-item-img-2 {
-                background-image: url(../img/backpackMobile.jpg);
-            }
-
-            .shop-item-img-3 {
-                background-image: url(../img/bootsMobile.jpg);
-            }
         }
 
         .sale::before {
@@ -387,6 +386,14 @@
 
 
 //      06 - Section About
+.hero.about {
+    background-image: url("../img/aboutHeroMobile.jpg");
+
+    @include min-1024px {
+        background-image: url("../img/aboutHeroDesktop.jpg");
+    }
+}
+
 .section.about {
     text-align: center;
 
@@ -409,37 +416,49 @@
         margin-bottom: 20px;
     }
 
-
-    .about-columns {
-        padding: 65px 0;
+    .cards.about {
+        padding: 65px 0 20px;
 
         @include min-768px {
             display: flex;
             justify-content: space-between;
         }
 
-        .about-column {
-            margin-bottom: 65px;
+        .card {
+            margin-bottom: 45px;
 
             @include min-768px {
                 flex-basis: 22%;
                 text-align: left;
             }
-        }
 
-        .image {
-            font-size: 48px;
-            color: $red-color;
-        }
+            .card-icon {
+                font-size: 48px;
+                color: $red-color;
+            }
 
-        .about-title {
-            font-size: 24px;
-            margin: 20px 0 10px;
+            .card-title {
+                font-size: 24px;
+                margin: 20px 0 10px;
+            }
+
+            .card-text {
+                font-size: 16px;
+                font-weight: normal;
+            }
         }
     }
 }
 
 //      07 - Section Meet Owners
+.meet-owners-image {
+    background-image: url("../img/ownersMobile.jpg");
+
+    @include min-1024px {
+        background-image: url("../img/ownersDesktop.jpg");
+    }
+}
+
 .meet-owners {
     .column-2 {
         padding: 90px 45px;
@@ -492,19 +511,25 @@
 // Section Hero Need Help
 .hero.need-help {
     background-image: linear-gradient(transparent, $black-color), url(../img/needHelpMobile.jpg);
+    min-height: 450px;
 
     @include min-1024px {
         min-height: 600px;
     }
 
     .hero-heading {
+
         @include min-768px {
             width: 30%;
         }
     }
 
     .hero-paragraph {
-        width: 55%;
+        width: 75%;
+
+        @include min-768px {
+            width: 55%;
+        }
 
         @include min-1024px {
             width: 35%;
@@ -512,68 +537,60 @@
     }
 
     .btn {
-        width: 30%;
+        width: 70%;
+        padding: 5px;
+
+        @include min-768px {
+            width: 30%;
+        }
+
+        @include min-1024px {
+            width: 15%;
+        }
+
     }
 }
 
 //      09 - Section Featured
-.hero.shop.announcement {
-    min-height: 340px;
 
-}
 
 .featured {
-    .shop-products {
+    .featured-product {
         color: $white-text-color;
+        position: relative;
+        min-height: 300px;
+        background-image: url(../img/tentMobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
 
-        @include min-768px {
-            display: block;
+        @include min-1024px {
+            background-image: url(../img/tentDesktop.jpg);
+            background-position: center bottom;
         }
 
-        .shop-item-img-1 {
-            background-image: url(../img/tentMobile.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+        .btn {
+            width: 180px;
+            position: absolute;
+            top: 3%;
+            right: 3%;
 
-            @include min-1024px {
-                background-image: url(../img/tentDesktop.jpg);
-                background-position: center bottom;
-            }
         }
 
-        .shop-image {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            position: relative;
-            min-height: 300px;
-
-
-
-            .btn {
-                width: 180px;
-                position: absolute;
-                top: 3%;
-                right: 3%;
-
-            }
-
-            .shop-item-name {
-                position: absolute;
-                bottom: 16%;
-                left: 3%;
-                font-size: 24px;
-            }
-
-            .shop-item-price {
-                position: absolute;
-                bottom: 6%;
-                left: 3%;
-                font-size: 16px;
-            }
+        .product-name {
+            position: absolute;
+            bottom: 16%;
+            left: 3%;
+            font-size: 24px;
+            font-weight: bold;
         }
 
+        .product-price {
+            position: absolute;
+            bottom: 6%;
+            left: 3%;
+            font-size: 16px;
+        }
     }
 }
 
@@ -602,28 +619,50 @@
     }
 }
 
+
+
 .shop-products {
     @include min-1024px {
         flex-basis: 72%;
     }
-}
 
-//      11 - gift card image
-.product {
-    .gift-card {
-        background-image: url(../img/giftMobile.jpg);
+    .card {
+        .card-bg-image.tent-1 {
+            background-image: url(../img/whiteTentMobile.jpg);
+        }
+    }
+
+    .card {
+        .card-bg-image.giftcard {
+            background-image: url(../img/giftMobile.jpg);
+        }
     }
 }
 
-//      ...    tents.html      ...
+.shop-products.tents {
+    .card {
+        @include min-1024px {
+            flex-basis: 80%;
+        }
 
-//      11 - white tent image
-
-.product {
-    .white-tent {
-        background-image: url(../img/whiteTentMobile.jpg);
     }
 }
+
+.section.products.tents {
+    .shop-products.tents {
+        @include min-1024px {
+            justify-content: flex-start;
+        }
+    }
+
+    .card {
+        @include min-1024px {
+            margin-right: 2%;
+        }
+    }
+}
+
+
 
 //      ...    contact.html      ...
 
@@ -634,15 +673,81 @@
 
     @include min-1024px {
         background-image: linear-gradient(transparent, $black-color), url(../img/needHelpDesktop.jpg);
-        min-height: 20px;
         padding-bottom: 0;
+    }
+
+    .hero-heading {
+        width: 80%;
+        font-size: 38px;
+        margin-bottom: 0;
+        line-height: 1.2;
     }
 }
 
 .section.contact {
+    padding-bottom: 35px;
+
+    .contact-cards {
+        @include min-768px {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @include min-1024px {
+            justify-content: stretch;
+        }
+
+        .card {
+            background-color: $white-text-color;
+            margin: 25px 0;
+            padding: 40px;
+            border-radius: 8px;
+
+            @include min-768px {
+                flex-basis: 48%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            @include min-1024px {
+                flex-basis: 38%;
+                margin-right: 3%;
+            }
+
+            .card-icon {
+                font-size: 48px;
+                color: $red-color;
+            }
+
+            .card-title {
+                font-size: 32px;
+                margin: 20px 10px;
+            }
+
+            .card-text {
+                margin-bottom: 10px;
+                line-height: 1.5;
+                font-size: 16px;
+                font-weight: normal;
+            }
+
+            .btn {
+                padding: 10px;
+            }
+        }
+    }
+
+
     .about-columns {
+
+
         @include min-1024px {
             width: 60%;
+        }
+
+        .about-column {
+            background-color: $white-text-color;
         }
     }
 }
@@ -784,4 +889,151 @@
 
 
     }
+}
+
+//      15 - Section individual product backpac, yellow tent
+
+.individual-product {
+    padding-bottom: 40px;
+
+    @include min-768px {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .product-bg-img {
+        min-height: 350px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+
+        @include min-768px {
+            flex-basis: 42%;
+            max-height: 400px;
+        }
+    }
+
+    .product-bg-img.backpack {
+        background-image: url(../img/backpackMobile.jpg);
+    }
+
+    .product-bg-img.yellow-tent {
+        background-image: url(../img/tentMobile.jpg);
+    }
+
+    .product-bg-img.white-tent {
+        background-image: url(../img/whiteTentMobile.jpg);
+    }
+
+    .product-bg-img.boots {
+        background-image: url(../img/bootsMobile.jpg);
+        position: relative;
+    }
+
+    .product-bg-img.giftcard {
+        background-image: url(../img/giftMobile.jpg);
+    }
+
+    .product-bg-img.boots::before {
+        content: "SALE";
+        position: absolute;
+        width: 90px;
+
+        padding: 10px 12px;
+        text-align: center;
+        z-index: 1;
+        top: 5%;
+        right: 10%;
+        background-color: $red-color;
+        color: $white-text-color;
+        border-radius: 5px;
+    }
+
+    .product-price {
+        span.sale {
+            text-decoration: line-through;
+            color: $red-color;
+        }
+    }
+
+    .product-description {
+        @include min-768px {
+            flex-basis: 55%;
+        }
+
+        .product-name {
+            font-size: 32px;
+            margin: 20px 0 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .quantity {
+            margin-bottom: 5px;
+        }
+
+        .order-wrapper {
+            display: flex;
+            margin-bottom: 20px;
+
+
+            input {
+                width: 60px;
+                text-align: center;
+                padding: 8px 12px 8px 6px;
+                border-radius: 5px;
+                border: 1px solid $black-color;
+            }
+
+            .btn {
+                color: $red-color;
+                border: 1px solid $red-color;
+                margin-left: 8px;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: $red-color;
+                    color: $white-text-color;
+                }
+            }
+
+
+        }
+
+        .product-paragraphs {
+            line-height: 1.5;
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
+        .tweet-link {
+
+            p {
+                font-size: 24px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+
+            .btn {
+                font-size: 16px;
+                color: $white-text-color;
+                background-color: #1b95e0;
+                padding: 5px 10px 5px;
+                border-radius: 5px;
+                font-weight: normal;
+
+                i {
+                    margin-right: 6px;
+                }
+            }
+        }
+    }
+
 }
