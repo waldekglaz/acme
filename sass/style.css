@@ -62,7 +62,7 @@ body {
 }
 
 .top-banner .btn {
-  margin: 10px 15px;
+  margin: 10px 15px 15px;
 }
 
 .navbar {
@@ -1562,6 +1562,17 @@ body {
 .btn-white {
   background-color: #f9f9f9;
   color: #333;
+}
+
+.btn-white:hover {
+  background-color: #222;
+  color: #f9f9f9;
+}
+
+.btn-white.disabled:hover {
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: auto;
 }
 
 .btn.black {

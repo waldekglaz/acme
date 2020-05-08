@@ -60,6 +60,19 @@
 .btn-white {
     background-color: $white-text-color;
     color: $black-text-color;
+
+    &:hover {
+        background-color: $black-color;
+        color: $white-text-color;
+    }
+}
+
+.btn-white.disabled {
+    &:hover {
+        background-color: $white-text-color;
+        color: $black-text-color;
+        cursor: auto;
+    }
 }
 
 .btn.black {
